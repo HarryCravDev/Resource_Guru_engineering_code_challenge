@@ -1,6 +1,6 @@
 import Node from './expression-tree';
 
-test('Return the correct expression string', () => {
+test('Return the correct expression string and value', () => {
     const tree = new Node(
         "÷",
         null,
@@ -33,7 +33,7 @@ test('Return the correct expression string', () => {
     expect(tree.result()).toStrictEqual(2);
 });
 
-test('Return the correct expression string', () => {
+test('Return the correct expression string and value', () => {
     const tree = new Node(
         "x",
         null,
@@ -50,7 +50,7 @@ test('Return the correct expression string', () => {
     expect(tree.result()).toStrictEqual(18);
 });
 
-test('Error if wrong Node configuration (provide no operator and value)', () => {
+test('Error if wrong Node configuration (provide no operator and value into Node class)', () => {
     const tree = new Node(
         "x",
         null,
@@ -68,7 +68,7 @@ test('Error if wrong Node configuration (provide no operator and value)', () => 
     }).toThrow();
 });
 
-test('Add only one left or right Node on an operator Node.', () => {
+test('Error if only one left or right Node on an operator Node.', () => {
     const treeMissingRightNode = new Node(
         "x",
         null,
