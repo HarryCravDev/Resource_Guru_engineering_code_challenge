@@ -1,5 +1,5 @@
 // Imports
-import { flatten } from "./flattern-array/flattern-array";
+import { flatten } from "./flattern-array/flatten-array";
 import Node from "./expression-tree/expression-tree";
 import assert = require("assert");
 

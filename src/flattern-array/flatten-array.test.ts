@@ -1,4 +1,4 @@
-import { flatten } from './flattern-array';
+import { flatten } from './flatten-array';
 
 test('Flattern array with nested arrays inputs.', () => {
     expect(flatten([ 1, [ 2, [ 3 ] ], 4 ])).toStrictEqual([1, 2, 3, 4]);
