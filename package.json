@@ -1,0 +1,30 @@
+{
+  "name": "algos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "typescript": "^4.7.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-typescript": "^7.17.12",
+    "@types/jest": "^27.5.1",
+    "@types/node": "^17.0.36",
+    "babel-jest": "^28.1.0",
+    "jest": "^28.1.0",
+    "nodemon": "^2.0.16",
+    "ts-jest": "^28.0.3",
+    "ts-node": "^10.8.0"
+  },
+  "scripts": {
+    "d": "npx tsc -w",
+    "dev": "nodemon",
+    "test": "jest --watchAll",
+    "jests": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
